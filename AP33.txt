@@ -1,4 +1,7 @@
 1-  cat consumos.txt | grep -B 1 -A 25 SEMANAS > file1
-2-  cat file1 | grep -A 4 100 > a
-    cat file1 | grep -wA 4 40 > d
+2-  cat file1 | grep -wA 6 A | grep -v "*" > a      (grep -wA 4 100 > d)
+    cat file1 | grep -wA 6 D | grep -v "*" > d      (grep -wA 4 40 > d)
     cat file1 | grep -A 4 sem1 > s
+3-  cat totales.txt | grep TOTAL > file2
+    cat consumos.txt | grep -w L >> file2
+    cat totales.txt | grep -A 4 sem1 >> file2
