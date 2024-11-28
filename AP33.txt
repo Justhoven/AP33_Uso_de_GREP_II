@@ -1,0 +1,4 @@
+1-  cat consumos.txt | grep -B 1 -A 25 SEMANAS > file1
+2-  cat file1 | grep -A 4 100 > a
+    cat file1 | grep -wA 4 40 > d
+    cat file1 | grep -A 4 sem1 > s
