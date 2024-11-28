@@ -5,3 +5,4 @@
 3-  cat totales.txt | grep TOTAL > file2
     cat consumos.txt | grep -w L >> file2
     cat totales.txt | grep -A 4 sem1 >> file2
+4-  cat totales.txt | grep -A 6 TOTAL | grep -v 2    (está bien...?)
